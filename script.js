@@ -3,7 +3,7 @@ import User from "./User.js";
 
 async function connectToDatabase() {
   try {
-    await mongoose.connect("mongodb://localhost:27017/testDB");
+    await mongoose.connect("mongodb:///testDB");
     console.log("Connected to DB");
   } catch (err) {
     console.error("Error connecting to DB:", err);
